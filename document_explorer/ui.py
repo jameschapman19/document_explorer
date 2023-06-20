@@ -4,7 +4,7 @@ import PySimpleGUI as sg
 def create_ui():
     # Define the layout of the UI
     layout = [
-        [sg.Text("Select a folder containing pdfs:")],  # A text label
+        [sg.Text("Select a folder containing pdfs and/or word documents:")],  # A text label
         [
             sg.Input(key="-FOLDER-"),
             sg.FolderBrowse(),

@@ -13,10 +13,6 @@ from langchain.vectorstores import FAISS, ElasticVectorSearch
 
 # load environment variables
 load_dotenv()
-# HUGGINGFACEHUB_API_TOKEN = getpass()
-HUGGINGFACEHUB_API_TOKEN = "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"
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = HUGGINGFACEHUB_API_TOKEN
-
 
 class QueryEngine:
     def __init__(
