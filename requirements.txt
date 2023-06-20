@@ -1,3 +1,6 @@
 langchain
 pandas
 getpass
+unstructured
+huggingface_hub
+sentence_transformers
