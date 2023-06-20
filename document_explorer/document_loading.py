@@ -7,6 +7,7 @@ from langchain.document_loaders import (
     UnstructuredHTMLLoader,
     UnstructuredPDFLoader,
     UnstructuredWordDocumentLoader,
+    UnstructuredPowerPointLoader,
 )
 
 # load environment variables
@@ -22,6 +23,8 @@ def create_document_loader(file):
         ".docx": UnstructuredWordDocumentLoader,
         ".pdf": UnstructuredPDFLoader,
         ".html": UnstructuredHTMLLoader,
+        ".pptx": UnstructuredPowerPointLoader,
+        ".ppt": UnstructuredPowerPointLoader,
         # Add more as needed
     }
     # Check if the file extension is supported

@@ -4,7 +4,7 @@ import PySimpleGUI as sg
 def create_ui():
     # Define the layout of the UI
     layout = [
-        [sg.Text("Select a folder containing pdfs and/or word documents:")],  # A text label
+        [sg.Text("Select a folder containing pdfs, word documents, powerpoints:")],  # A text label
         [
             sg.Input(key="-FOLDER-"),
             sg.FolderBrowse(),
@@ -15,6 +15,6 @@ def create_ui():
         [sg.Output(size=(80, 20))],  # An output area
     ]
     # Create the window object
-    window = sg.Window("PDF Embedder", layout)
+    window = sg.Window("Document Explorer", layout)
     # Return the window object
     return window
